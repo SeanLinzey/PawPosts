@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign Up - Paw Post</title>
+    <meta charset="utf-8">
+    <link href="pacific.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+    <nav>
+        <a href="SignUp.html">Sign Up</a> &nbsp;         
+        <a href="Contact.html">Contact Us</a> &nbsp;
+        <a href="index.html">About Us</a> &nbsp; 
+        <a href="Ekko.html">Ekko</a> &nbsp;        
+        <a href="Apollo.html">Apollo</a> &nbsp; 
+        <a href="BeanBean.html">BeanBean</a>
+    </nav>
+    <main>
+        <h2>Create Your Account</h2>
+        <form id="signup-form" action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password:</label><br>
+                <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </main>
+    <footer>
+        Copyright &copy; Paw Posts<br>
+        <a href="mailto:PawPosts@gmail.com">PawPosts@gmail.com</a><br>
+        <span id="last-modified">Last Modified: </span>
+    </footer>
+    <script>
+        // JavaScript to dynamically update the "Last Modified" date
+        document.getElementById('last-modified').textContent += document.lastModified;
+    </script>
+</div>
+</body>
+</html>

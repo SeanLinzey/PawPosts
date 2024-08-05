@@ -11,10 +11,12 @@
         <h1>Apollo's Posts</h1>
     </header>
     <nav>
+        <a href="SignUp.html">Sign Up</a> &nbsp;         
+        <a href="Contact.html">Contact Us</a> &nbsp;
         <a href="index.html">About Us</a> &nbsp; 
+        <a href="Ekko.html">Ekko</a> &nbsp;        
         <a href="Apollo.html">Apollo</a> &nbsp; 
-        <a href="BeanBean.html">BeanBean</a> &nbsp; 
-        <a href="Ekko.html">Ekko</a>
+        <a href="BeanBean.html">BeanBean</a>
     </nav>
     <main>
         <h2>Apollo's Latest Posts</h2>
@@ -53,8 +55,13 @@
     </main>
     <footer>
         Copyright &copy; Paw Posts<br>
-        <a href="mailto:PawPosts@gmail.com">PawPosts@gmail.com</a>
+        <a href="mailto:PawPosts@gmail.com">PawPosts@gmail.com</a><br>
+        <span id="last-modified">Last Modified: </span>
     </footer>
+    <script>
+        // JavaScript to dynamically update the "Last Modified" date
+        document.getElementById('last-modified').textContent += document.lastModified;
+    </script>
 </div>
 </body>
 </html>
