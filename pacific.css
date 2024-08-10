@@ -9,12 +9,24 @@ body {
 header {
   background-color: #FFB6C1;
   color: white;
-  padding: 10px 0;
-  text-align: center;
+  padding: 10px 20px; /* Adjusted padding to fit logo and text */
+  display: flex;
+  align-items: center; /* Center logo and text vertically */
 }
 
 header h1 {
   margin: 0;
+  display: inline-block;
+  padding-left: 10px; /* Space between logo and text */
+}
+
+/* Logo styles */
+#logo {
+  width: 80px;  /* Increased width for larger logo */
+  height: auto;
+  margin: 0;  /* Remove margin for snug fit */
+  vertical-align: middle;
+  display: inline-block;
 }
 
 nav {
@@ -87,7 +99,7 @@ footer a:hover {
   color: #555;
 }
 
-/* Styles for the contact form */
+/* Styles for the contact form and sign-up form */
 form {
   margin: 20px;
   padding: 20px;
@@ -135,4 +147,57 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #DDA0DD;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #FFB6C1;
+  color: white;
+  font-weight: bold;
+}
+
+td {
+  color: #555;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Optional styles for responsive design */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start on smaller screens */
+  }
+
+  #logo {
+    margin-bottom: 10px;
+  }
+
+  form {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  table {
+    font-size: 14px; /* Smaller text for mobile */
+  }
 }

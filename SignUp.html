@@ -4,23 +4,36 @@
     <title>Sign Up - Paw Post</title>
     <meta charset="utf-8">
     <link href="pacific.css" rel="stylesheet">
+    <script>
+        function handleSignUp(event) {
+            event.preventDefault();  // Prevents the default form submission behavior
+            // Hide the sign-up form
+            document.getElementById('signup-form').style.display = 'none';
+            // Show the sign-in button
+            document.getElementById('signin-button').style.display = 'block';
+        }
+    </script>
 </head>
 <body>
 <div id="wrapper">
     <header>
+        <img src="Blog.jpg" alt="Paw Post Logo" id="logo">
         <h1>Sign Up</h1>
     </header>
     <nav>
-        <a href="SignUp.html">Sign Up</a> &nbsp;         
+        <a href="SignUp.html">Sign Up</a> &nbsp;     
+        <a href="SignIn.html">Sign In</a> &nbsp;        
         <a href="Contact.html">Contact Us</a> &nbsp;
         <a href="index.html">About Us</a> &nbsp; 
         <a href="Ekko.html">Ekko</a> &nbsp;        
         <a href="Apollo.html">Apollo</a> &nbsp; 
-        <a href="BeanBean.html">BeanBean</a>
+        <a href="BeanBean.html">BeanBean</a> &nbsp; 
+        <a href="Statistics.html">Statistics</a> &nbsp; 
+        <a href="Resources.html">Resources</a>
     </nav>
     <main>
         <h2>Create Your Account</h2>
-        <form id="signup-form" action="#" method="post">
+        <form id="signup-form" onsubmit="handleSignUp(event)">
             <div class="form-group">
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br><br>
@@ -39,6 +52,13 @@
             </div>
             <button type="submit">Sign Up</button>
         </form>
+
+        <div id="signin-button" style="display:none;">
+            <p>Sign-up successful! Click the button below to sign in:</p>
+            <a href="SignIn.html">
+                <button type="button">Sign In</button>
+            </a>
+        </div>
     </main>
     <footer>
         Copyright &copy; Paw Posts<br>
